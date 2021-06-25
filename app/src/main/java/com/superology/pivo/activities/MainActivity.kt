@@ -41,7 +41,7 @@ class MainActivity : AppCompatActivity() {
         }
         buttonView?.run {
             isEnabled = false
-            setOnClickListener { onSendButtonClick(inputView?.text.toString()) }
+            setOnClickListener { onSendButtonClick(inputView?.text?.toString()) }
         }
         loadingView?.visibility = View.INVISIBLE
     }
@@ -57,13 +57,15 @@ class MainActivity : AppCompatActivity() {
             }) { Log.e(TAG, it.message.toString(), it) })
     }
 
-    private fun onSendButtonClick(inputText: String) {
-        loadingView?.visibility = View.VISIBLE
-        buttonView?.run {
-            this.text = ""
-            isEnabled = false
+    private fun onSendButtonClick(inputText: String?) {
+        if (inputText != null && inputText.isNotBlank()) {
+            loadingView?.visibility = View.VISIBLE
+            buttonView?.run {
+                this.text = ""
+                isEnabled = false
+            }
             inputMethodManager?.hideSoftInputFromWindow(inputView?.windowToken, 0)
-            DatabaseService.setMessage(context, inputText)
+            DatabaseService.setMessage(this, inputText)
         }
     }
 }
