@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "997897533812",
+    "project_id": "pivoapp-3c4e9",
+    "storage_bucket": "pivoapp-3c4e9.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:997897533812:android:a3a73712f2ac140de95421",
+        "android_client_info": {
+          "package_name": "com.superology.pivo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "997897533812-775mp0592nch876mrlp239r4cchejvkm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAdPnJoUKDkzKQkI7NVC1BeiiqaPH5B4sI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "997897533812-775mp0592nch876mrlp239r4cchejvkm.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

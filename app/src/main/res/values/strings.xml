@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">Pivo App</string>
+
+    <string name="label_button_send">Confirm</string>
+    <string name="error_firebase_set_element">Setting element error</string>
+</resources>
