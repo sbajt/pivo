@@ -18,7 +18,7 @@
         app:layout_constraintRight_toRightOf="parent"
         tools:text="Neka IPA, što je ok. Inaće APA ode jako brzo jer većinom se preferira piva slična žuji" />
 
-    <com.google.android.material.textfield.TextInputEditText
+    <EditText
         android:id="@+id/inputView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
